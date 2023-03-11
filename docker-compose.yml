@@ -6,8 +6,8 @@ services:
     environment:
       RABBITMQ_NODENAME: microservice_rabbitmq
     ports:
-      - "5672:5672"
-      - "15672:15672"
+      - "5672:5672" # expose rabbitmq port
+      - "15672:15672" # expose management interface
 #    volumes:
 #      - "rabbitmq_data:/data"
 #volumes:
